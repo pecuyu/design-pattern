@@ -18,4 +18,8 @@ public class DemandHolderSingleton {
     private static class DemandHolder {  // static holder class
         private static final DemandHolderSingleton sInstance = new DemandHolderSingleton();
     }
+
+    public void doSomeThing() {
+        System.out.println(this.getClass().getSimpleName() + " : doSomeThing");
+    }
 }
