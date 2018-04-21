@@ -20,5 +20,17 @@ public class test {
 
         SubB b = new SubB();
         b.todo();
+
+        useCallback();
+    }
+
+    public static void useCallback() {
+        Common common = new Common();
+        common.todo(new Callback() {
+            @Override
+            public void onCall() {
+                System.out.println("some work when call back");
+            }
+        });
     }
 }
