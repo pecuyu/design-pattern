@@ -7,12 +7,24 @@ package com.pecuyu.designpattern.FactoryMethod;
  */
 
 public abstract class AbsProduct {
+    private int id;
+    private String brand;
+
     public abstract String whereFrom();
 
     public abstract String description();
 
     @Override
     public String toString() {
-        return "where:" + whereFrom() + ", description" + description();
+        return "id:" + this.id + " , brand:" + this.brand +
+                "where:" + whereFrom() + ", description" + description();
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 }
