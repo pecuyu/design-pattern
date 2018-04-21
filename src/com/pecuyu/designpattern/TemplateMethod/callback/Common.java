@@ -1,4 +1,4 @@
-package com.pecuyu.designpattern.TemplateMethod;
+package com.pecuyu.designpattern.TemplateMethod.callback;
 
 /**
  * author  pecuyu

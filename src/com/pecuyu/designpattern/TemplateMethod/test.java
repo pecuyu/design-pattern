@@ -1,5 +1,8 @@
 package com.pecuyu.designpattern.TemplateMethod;
 
+import com.pecuyu.designpattern.TemplateMethod.callback.Callback;
+import com.pecuyu.designpattern.TemplateMethod.callback.Common;
+
 /**
  * author  pecuyu
  * date    2018/4/20
