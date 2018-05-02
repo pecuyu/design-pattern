@@ -50,8 +50,16 @@ public class Document implements Cloneable{  // 需要实现Cloneable接口
         return links;
     }
 
+//    @Override
+//    protected Object clone() throws CloneNotSupportedException {
+//        return super.clone();  /// 浅拷贝
+//    }
+
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return super.clone();  /// 浅拷贝
+        // 深拷贝
+        Document doc = (Document) super.clone();
+        doc.imgs = (ArrayList<String>) this.imgs.clone(); // 拷贝list的元素
+        return doc;  /// 浅拷贝
     }
 }
